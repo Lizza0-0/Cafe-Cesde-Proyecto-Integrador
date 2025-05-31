@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: fuente1;
-    src: url(Fonts/Recoleta-RegularDEMO.otf);
+    src: url(Fonts/gobold/Gobold\ Bold\ Italic.otf);
 }
 
 @font-face {
@@ -116,6 +116,11 @@ main {
     min-height: 400px;
 }
 
+.main a{
+    color: white;
+    text-decoration: none;
+}
+
 .left{
     background-color: rgb(177, 103, 42, 0.692);
     color: white;
@@ -163,3 +168,236 @@ footer .redes img{
     width: 50px;
 }
 
+
+/*Productos*/
+
+.tituloProductos { 
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    margin: 40px 0;
+    font-family: fuente2;
+}
+
+.categoriaProductos { 
+    background-color: rgba(177, 103, 42, 0.692);
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.categoriaProductos h2 { 
+    color: #311a03;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-family: fuente3;
+}
+
+.categoriaProductos h3 { 
+    color: #5c3618;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: fuente1;
+}
+
+.tipoCafe, .tipoPasteleria, .tipoBebida { 
+    margin-bottom: 30px;
+}
+
+.listaProductos { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.producto { 
+    background-color: #f8e7d7;
+    border: 1px solid #d4a77d;
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: calc(33% - 20px);
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.producto:hover { 
+    transform: translateY(-5px);
+}
+
+.producto p { 
+    margin: 5px 0;
+    color: #4f2d12;
+    font-size: 1.1em;
+}
+
+.producto .descripcion { 
+    font-size: 0.9em; 
+    color: #7b4f2a; 
+    margin-bottom: 10px; 
+    font-style: italic; 
+}
+
+.producto .precio { 
+    font-weight: bold;
+    color: #a04a00;
+    font-size: 1.2em;
+    margin-top: auto; 
+}
+
+@media (max-width: 768px) {
+    .producto {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .producto { 
+        width: 100%;
+    }
+
+    .tituloProductos { 
+        font-size: 1.8em;
+    }
+
+    .categoriaProductos h2 { 
+        font-size: 1.5em;
+    }
+
+    .categoriaProductos h3 {
+        font-size: 1.2em;
+    }
+}
+
+/*Soporte*/
+main h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #a67c52;
+    border-radius: 5px;
+    background-color: #fffdf9;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #6d442a;
+}
+
+/*Inventario*/
+label, select {
+      display: block;
+      margin: 10px 0 20px 0;
+      font-size: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2e8dc;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f6f2;
+    }
+    input[type="number"] {
+      width: 60px;
+    }
+    button[type="submit"] {
+      background-color: #5b3e2b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    button[type="submit"]:hover {
+    background-color: #6d442a;
+}
+
+/*Ingreso*/
+    form {
+      margin-bottom: 40px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #mensaje-ingreso {
+      text-align: center;
+      font-size: 18px;
+      color: green;
+      margin-top: 10px;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #5b3e2b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      display: block;
+      margin: 20px auto;
+    }
+    button:hover {
+      background-color: #7b5e45;
+    }

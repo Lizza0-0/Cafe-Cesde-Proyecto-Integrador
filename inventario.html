@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="banner">Cafeteria Cesde</div>
+        <img src="Images/banner.webp" alt="Header Image">
+        <div class="eslogan">Donde el conocimiento se mezcla con buen café.</div>
+        <div class="logo"><img src="Images/cafe cesde logo.jpg" alt=""></div>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="mer.html">MER</a>
+        <a href="logica.html">Logica</a>
+        <a href="soporte.html">Soporte</a>
+    </nav> 
+    <h1>Inventario de Cafetería Cesde</h1>
+  <label for="frecuencia">Tipo de inventario:</label>
+  <select id="frecuencia" name="frecuencia">
+    <option value="diario">Diario</option>
+    <option value="quincenal">Quincenal</option>
+    <option value="mensual">Mensual</option>
+    <option value="anual">Anual</option>
+  </select>
+  <table>
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Inventario actual</th>
+        <th>Pedido próximo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Vasos 4oz</td>
+        <td><input type="number" name="stock_vasos4oz" min="0"></td>
+        <td><input type="number" name="pedido_vasos_expreso" min="0"></td>
+      </tr>
+      <tr>
+        <td>Vasos 10oz</td>
+        <td><input type="number" name="stock_vasos10oz" min="0"></td>
+        <td><input type="number" name="pedido_vasos10oz" min="0"></td>
+      </tr>
+      <tr>
+        <td>Vasos 16oz</td>
+        <td><input type="number" name="stock_vasos16oz" min="0"></td>
+        <td><input type="number" name="pedido_vasos16oz" min="0"></td>
+      </tr>
+      <tr>
+        <td>Vaso domo 16oz</td>
+        <td><input type="number" name="stock_domo 16oz" min="0"></td>
+        <td><input type="number" name="pedido_domo 16oz" min="0"></td>
+      </tr>
+      <tr>
+        <td>Cafe grano</td>
+        <td><input type="number" name="stock_cafe" min="0"></td>
+        <td><input type="number" name="pedido_cafe" min="0"></td>
+      </tr>
+      <tr>
+        <td>Empanada de Carne</td>
+        <td><input type="number" name="stock_empanada_carne" min="0"></td>
+        <td><input type="number" name="pedido_empanada_carne" min="0"></td>
+      </tr>
+      <tr>
+        <td>Chocolate en polvo</td>
+        <td><input type="number" name="stock_empanada_carne" min="0"></td>
+        <td><input type="number" name="pedido_empanada_carne" min="0"></td>
+      </tr>
+      <tr>
+        <td>Salsa de chocolate</td>
+        <td><input type="number" name="stock_empanada_carne" min="0"></td>
+        <td><input type="number" name="pedido_empanada_carne" min="0"></td>
+      </tr>
+      <tr>
+        <td>Te chai</td>
+        <td><input type="number" name="stock_empanada_carne" min="0"></td>
+        <td><input type="number" name="pedido_empanada_carne" min="0"></td>
+      </tr>
+      <tr>
+        <td>Te matcha</td>
+        <td><input type="number" name="stock_empanada_carne" min="0"></td>
+        <td><input type="number" name="pedido_empanada_carne" min="0"></td>
+      </tr>
+      <tr>
+        <td>Te taro</td>
+        <td><input type="number" name="stock_empanada_carne" min="0"></td>
+        <td><input type="number" name="pedido_empanada_carne" min="0"></td>
+      </tr>
+      
+
+    </tbody>
+  </table>
+
+  <button type="submit">Guardar Inventario</button>
+
+    <footer>
+        <p>Hecho por Equipo Cesde 2025-1</p>
+        <p>Soporte: 3008694578</p>
+        <p>Email: equipocesde25@gmail.com</p>
+        <div class="redes">
+            <div class="redes">
+                <a href="#"><img src="Images/whatsapp.png" alt=""></a>
+                <a href="#"><img src="Images/tik-tok.png" alt=""></a>
+                <a href="#"><img src="Images/face.png" alt=""></a>
+                <a href="#"><img src="Images/twitter.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
